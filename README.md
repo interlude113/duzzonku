@@ -7,5 +7,4 @@ Seungwoo and toshiya's Development Project Repository　
 この世はとかく生きずらい
 この素晴らしきろくでもない、世界。
 
-## No.2
-No.1が終わったら着手
+aaaaa
