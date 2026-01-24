@@ -1,5 +1,9 @@
 # duzzonku
-Seungwoo and toshiya's Development Project Repository　
+Seungwoo and toshiya's Development Project Repository
+
+# 注意事項
+ - 開発するものをissuesに作成してください。
+ - pushした内容はPull Requestを出し、お互いチェックできるようにしてください。 　
 
 ## No.1
 自分の自己紹介ページ　俺様のやつ
