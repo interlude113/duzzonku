@@ -6,3 +6,6 @@ Seungwoo and toshiya's Development Project Repository　
 人に縛られないじんせいをおくりてぇ
 この世はとかく生きずらい
 この素晴らしきろくでもない、世界。
+
+## No.2
+No.1が終わったら着手
