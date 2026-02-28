@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduce</title>
+    <title>My Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* 基本背景：ダークモード */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: 'Pretendard', sans-serif; /* フォント設定 */
+            overflow-x: hidden;
+        }
+
+        /* 各セクションは画面を全部埋めるように設定 */
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* 1. イントロセクション */
+        .intro h1 { font-size: 5rem; font-weight: bold; background: linear-gradient(to right, #00c6ff, #0072ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .intro p { font-size: 1.5rem; margin-top: 20px; color: #aaa; }
+
+        /* 2. 自己初回セクション */
+        .about-container { display: flex; width: 80%; gap: 50px; align-items: center; }
+        .profile-img { width: 300px; height: 400px; background: #333; border-radius: 20px; object-fit: cover; }
+        .text-box h2 { font-size: 3rem; margin-bottom: 20px; }
+        .text-box p { font-size: 1.2rem; line-height: 1.6; color: #ccc; margin-bottom: 15px;}
+
+        /* 3. スキルセクション */
+        .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 50px; }
+        .card { background: #222; padding: 30px; border-radius: 15px; text-align: center; border: 1px solid #333; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); border-color: #0072ff; }
+    </style>
 </head>
 <body>
-    hello world!
+
+    <section class="intro">
+        <h1 data-aos="fade-down" data-aos-duration="1000">Hello, I'm Developer</h1>
+        <p data-aos="fade-up" data-aos-delay="500">下にスクロールして私を確認してみて！</p>
+    </section>
+
+    <section>
+        <div class="about-container">
+            <img src="selfie.jpeg" alt="Profile" class="profile-img" data-aos="fade-right" data-aos-duration="1200">
+            
+            <div class="text-box">
+                <h2 data-aos="fade-left" data-aos-delay="200">プログラミングを楽しんでいる<br>開発者です。</h2>
+                <p data-aos="fade-left" data-aos-delay="400">単純にコードを書くことではなく、</p>
+                <p data-aos="fade-left" data-aos-delay="600">より便利な世界を作ることに集中しています。</p>
+                <p data-aos="fade-left" data-aos-delay="800">新しい技術を学ぶことが好きです。</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 data-aos="zoom-in" style="font-size: 3rem; margin-bottom: 20px;">My Skills</h2>
+        <div class="skills-grid">
+            <div class="card" data-aos="flip-left" data-aos-delay="0"><h3>HTML/CSS</h3></div>
+            <div class="card" data-aos="flip-left" data-aos-delay="200"><h3>JavaScript</h3></div>
+            <div class="card" data-aos="flip-left" data-aos-delay="400"><h3>PHP</h3></div>
+            <div class="card" data-aos="flip-left" data-aos-delay="600"><h3>Korean</h3></div>
+            <div class="card" data-aos="flip-left" data-aos-delay="800"><h3>Japanese</h3></div>
+            <div class="card" data-aos="flip-left" data-aos-delay="1000"><h3>English</h3></div>
+        </div>
+    </section>
+
+    <section style="background: #000;">
+        <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" style="font-size: 3.0rem;">一緒に成長したいです。</h2>
+        <p data-aos="fade-up" data-aos-delay="300" style="margin-top: 20px; font-size: 1.2rem;">charliexp115@gmail.com</p>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
