@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTIテスト</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <section id="main" class="active">
+            <h1>自分のMBTIは？ 🤔</h1>
+            <p>12の質問で見る自分の性格タイプ！</p>
+            <button class="btn" onclick="startTest()">テスト開始</button>
+        </section>
+
+        <section id="qna">
+            <div class="status-bar">
+                <div class="status-fill"></div>
+            </div>
+            <h2 id="question-text">質問が入る場所です。</h2>
+            <div id="answer-buttons">
+                </div>
+        </section>
+
+        <section id="result">
+            <h2>あなたの性格は...</h2>
+            <div id="result-img" style="font-size: 5rem; margin: 20px 0;">✨</div>
+            <h3 id="result-name">MBTI結果</h3>
+            <p id="result-desc" style="margin-top: 15px;">結果についての詳細な説明がここに表示されます。</p>
+            <button class="btn" onclick="location.reload()" style="margin-top: 20px;">テストをやり直す</button>
+        </section>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
