@@ -19,9 +19,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // 本番環境でマイグレーションを自動実行
-        if (app()->environment('production')) {
-            \Artisan::call('migrate', ['--force' => true]);
-        }
+        //
     }
 }
