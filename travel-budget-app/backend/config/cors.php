@@ -6,8 +6,11 @@ return [
 
     'allowed_methods' => ['*'],
 
-    // Reactのローカルサーバーからのアクセスのみ許可
-    'allowed_origins' => ['http://localhost:5173'],
+    // ローカルとVercelのURLを許可
+    'allowed_origins' => [
+        'http://localhost:5173',
+        'https://duzzonku-eta.vercel.app',
+    ],
 
     'allowed_origins_patterns' => [],
 
