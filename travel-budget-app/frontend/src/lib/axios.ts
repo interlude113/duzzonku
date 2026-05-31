@@ -1,8 +1,8 @@
 import axios from 'axios'
 
 const api = axios.create({
-  // Laravel APIのベースURL
-  baseURL: 'http://localhost:8000/api',
+  // 本番環境のLaravel APIのURL
+  baseURL: 'https://duzzonku-production.up.railway.app/api',
 })
 
 // リクエストのたびにlocalStorageからトークンを取得してヘッダーに付与
