@@ -3,6 +3,10 @@
 旅行の予算管理をシンプルに。旅行ごとに支出を記録し、残高をリアルタイムで確認できるWebアプリです。
 
 **デモ**: https://duzzonku-eta.vercel.app
+---
+**テスト用アカウント**
+- ID：test@example.com
+- PW：password123
 
 ## 技術スタック
 
